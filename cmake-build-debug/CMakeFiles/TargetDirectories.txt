@@ -1,0 +1,3 @@
+/home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles/PointerPractice.dir
+/home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles/edit_cache.dir

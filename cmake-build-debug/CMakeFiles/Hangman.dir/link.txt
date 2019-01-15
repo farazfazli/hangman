@@ -1,0 +1,1 @@
+clang  -Weverything -g   CMakeFiles/Hangman.dir/main.c.o  -o Hangman -lcurses -lform 
