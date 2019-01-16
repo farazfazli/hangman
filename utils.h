@@ -3,13 +3,6 @@
 #include <stdlib.h>
 
 /**
- * Returns length of array
- * @param arr - words array
- * @return length
- */
-size_t len(char **arr);
-
-/**
  * Prints the state of each letter and counts the number of underscores
  * @param word_to_guess - word being guessed (array of pointers)
  * @return underscore count

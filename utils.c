@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "utils.h"
 
-size_t len(char **arr) {
+size_t len(char *arr[]) {
     return sizeof(arr) / sizeof(arr[0]);
 }
 

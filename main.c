@@ -30,6 +30,7 @@ enum {
 static char *words[] = {"racing", "magic", "bow", "racecar"};
 
 int main() {
+    init_rng();
     char letters[ALPHABET_SIZE];
 
     // Let's set 'letters' to be composed of just _
@@ -37,8 +38,7 @@ int main() {
     memset(letters, '_', ALPHABET_SIZE);
 
     // Total number of elements in our array
-    printf("%d", len(words));
-    size_t total_elems = len(words);
+    size_t total_elems = sizeof(words)/sizeof(words[0]);
 
     char *word = words[rand_to(total_elems)];
     size_t word_size = strlen(word) + 1; // includes NUL character
