@@ -21,11 +21,10 @@
  */
 enum {
     ALPHABET_SIZE = 26,
-    WORD_LENGTH = 3,
     TOTAL_TRIES = 10,
 };
 
-static char *words[] = {"car", "dog", "cat", "bag"};
+static char *words[] = {"racing", "magic", "bow", "racecar"};
 
 static size_t rand_to(size_t max);
 
@@ -75,29 +74,30 @@ int main() {
     // Seed rng with NULL (predictable but good enough for us)
     srand((unsigned int) time(NULL));
 
-    size_t words_size = sizeof(words) / sizeof(words[0]);
+    // Total number of elements in our array
+    size_t total_elems = sizeof(words) / sizeof(words[0]);
 
-    char *word = words[rand_to(words_size)];
+    char *word = words[rand_to(total_elems)];
+    size_t word_size = strlen(word) + 1; // includes NUL character
 
-    //char *word_to_guess[WORD_LENGTH]; // TODO: VLA?
-    char *word_to_guess[WORD_LENGTH];
-
-    size_t word_len = strlen(word); // doesn't count \0
+    char **word_to_guess = alloca(word_size * sizeof(word));
+    size_t word_len = strlen(word); // excludes NUL
+    // point each element to the appropriate letter in our array
     for (size_t i = 0; i < word_len; i++) {
         word_to_guess[i] = &letters[from_a(word[i])];
     }
 
     int tries = 0;
     size_t num_previous_underscores = word_len;
-    int current_letter;
 
     print_letters_state(word_to_guess, word_len);
     fputs("\nPick a letter: ", stdout);
 
-    // possibly replace getchar() with fgets and parse
+    // possibly replace getchar() with fgets and parse each letter?
+    int current_letter;
     while ((current_letter = getchar()) != EOF) {
         if (!isalpha(current_letter)) {
-            // Invalid input, simply continue
+            // Simply continue
             continue;
         }
 
