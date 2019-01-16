@@ -150,6 +150,60 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/main.c.s
 .PHONY : main.c.s
 
+rng.o: rng.c.o
+
+.PHONY : rng.o
+
+# target to build an object file
+rng.c.o:
+	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/rng.c.o
+.PHONY : rng.c.o
+
+rng.i: rng.c.i
+
+.PHONY : rng.i
+
+# target to preprocess a source file
+rng.c.i:
+	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/rng.c.i
+.PHONY : rng.c.i
+
+rng.s: rng.c.s
+
+.PHONY : rng.s
+
+# target to generate assembly for a file
+rng.c.s:
+	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/rng.c.s
+.PHONY : rng.c.s
+
+utils.o: utils.c.o
+
+.PHONY : utils.o
+
+# target to build an object file
+utils.c.o:
+	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/utils.c.o
+.PHONY : utils.c.o
+
+utils.i: utils.c.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.c.i:
+	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/utils.c.i
+.PHONY : utils.c.i
+
+utils.s: utils.c.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.c.s:
+	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/utils.c.s
+.PHONY : utils.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +216,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rng.o"
+	@echo "... rng.i"
+	@echo "... rng.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

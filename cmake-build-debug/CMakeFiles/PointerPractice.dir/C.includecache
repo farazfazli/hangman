@@ -13,8 +13,24 @@ string.h
 -
 ctype.h
 -
+stdlib.h
+-
+rng.h
+/home/user/CLionProjects/Hangman/rng.h
+utils.h
+/home/user/CLionProjects/Hangman/utils.h
+
+/home/user/CLionProjects/Hangman/rng.c
+rng.h
+/home/user/CLionProjects/Hangman/rng.h
 time.h
 -
+
+/home/user/CLionProjects/Hangman/rng.h
+stdlib.h
+-
+
+/home/user/CLionProjects/Hangman/utils.h
 stdlib.h
 -
 

@@ -1,1 +1,1 @@
-clang  -Weverything -Werror -fsanitize=undefined,integer,implicit-conversion,nullability,address,leak,cfi -flto -fvisibility=default -g   CMakeFiles/PointerPractice.dir/main.c.o  -o PointerPractice -lcurses -lform 
+clang  -Weverything -Werror -fsanitize=undefined,integer,implicit-conversion,nullability,address,leak,cfi -flto -fvisibility=default -g   CMakeFiles/PointerPractice.dir/main.c.o CMakeFiles/PointerPractice.dir/rng.c.o CMakeFiles/PointerPractice.dir/utils.c.o  -o PointerPractice -lcurses -lform 
