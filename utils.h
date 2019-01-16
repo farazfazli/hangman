@@ -12,10 +12,9 @@ size_t len(char **arr);
 /**
  * Prints the state of each letter and counts the number of underscores
  * @param word_to_guess - word being guessed (array of pointers)
- * @param word_len - length of word (excluding NUL char)
  * @return underscore count
  */
-size_t print_count_underscores(char **word_to_guess, size_t word_len);
+size_t print_count_underscores(char **word_to_guess);
 
 /**
  * Returns the distance from 'a'

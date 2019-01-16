@@ -5,11 +5,11 @@ size_t len(char **arr) {
     return sizeof(arr) / sizeof(arr[0]);
 }
 
-size_t print_count_underscores(char **word_to_guess, size_t word_len) {
+size_t print_count_underscores(char **word_to_guess) {
     size_t num_underscores = 0;
-    for (size_t i = 0; i < word_len; i++) {
-        printf("%c ", *word_to_guess[i]);
-        if (*word_to_guess[i] == '_') {
+    while (*word_to_guess) {
+        printf("%c ", **word_to_guess);
+        if (**word_to_guess++ == '_') {
             num_underscores++;
         }
     }

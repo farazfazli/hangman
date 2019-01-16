@@ -6,3 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/home/user/CLionProjects/Hangman/utils.c
+stdio.h
+-
+utils.h
+/home/user/CLionProjects/Hangman/utils.h
+
+/home/user/CLionProjects/Hangman/utils.h
+stdlib.h
+-
+

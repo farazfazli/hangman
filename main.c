@@ -36,16 +36,15 @@ int main() {
     // This will later be changed as the user guesses
     memset(letters, '_', ALPHABET_SIZE);
 
-    init_rng();
-
     // Total number of elements in our array
+    printf("%d", len(words));
     size_t total_elems = len(words);
 
     char *word = words[rand_to(total_elems)];
     size_t word_size = strlen(word) + 1; // includes NUL character
 
     // Here I used 'malloc' instead of VLA
-    char **word_to_guess = malloc(word_size * sizeof(word));
+    char **word_to_guess = malloc(word_size * sizeof(*word_to_guess));
     size_t word_len = strlen(word); // excludes NUL
 
     // point each element to the appropriate letter in our array
@@ -56,7 +55,7 @@ int main() {
     int tries = 0;
     size_t num_previous_underscores = word_len;
 
-    print_count_underscores(word_to_guess, word_len);
+    print_count_underscores(word_to_guess);
     fputs("\nPick a letter: ", stdout);
 
     // Could replace getchar() with fgets and parse each letter
@@ -84,7 +83,7 @@ int main() {
         }
 
         // Finds if word still has underscores, and print word state
-        size_t num_underscores = print_count_underscores(word_to_guess, word_len);
+        size_t num_underscores = print_count_underscores(word_to_guess);
 
         // If letter has no correct guesses from this turn, increment tries
         if (num_underscores == num_previous_underscores) {
