@@ -1,12 +1,18 @@
+# Improved version adapted from https://codereview.stackexchange.com/a/210770/78786
 cmake_minimum_required(VERSION 3.13)
-project(PointerPractice C)
+project(Hangman C)
 
-find_package(Curses REQUIRED)
-include_directories(${CURSES_INCLUDE_DIR})
+add_executable(${CMAKE_PROJECT_NAME} main.c utils.c utils.h rng.c rng.h)
 
 set(CMAKE_C_COMPILER clang)
-set(CMAKE_C_STANDARD 99)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Weverything -Werror -fsanitize=undefined,integer,implicit-conversion,nullability,address,leak,cfi -flto -fvisibility=default")
-
-add_executable(${CMAKE_PROJECT_NAME} main.c rng.h rng.c utils.c utils.h)
-target_link_libraries(${CMAKE_PROJECT_NAME} ${CURSES_LIBRARIES})
+target_compile_features(${CMAKE_PROJECT_NAME} PRIVATE c_std_99)
+target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE
+        $<$<C_COMPILER_ID:Clang>:
+        -Weverything
+        -fsanitize=undefined,integer,implicit-conversion,nullability,address,leak,cfi
+        -flto
+        -fvisibility=default>)
+target_link_options(${CMAKE_PROJECT_NAME} PRIVATE
+        $<$<C_COMPILER_ID:Clang>:
+        -fsanitize=undefined,integer,implicit-conversion,nullability,address,leak,cfi
+        -flto>)

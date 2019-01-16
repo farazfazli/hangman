@@ -3,3 +3,11 @@
 
 CMakeFiles/Hangman.dir/main.c.o
  /home/user/CLionProjects/Hangman/main.c
+ /home/user/CLionProjects/Hangman/rng.h
+ /home/user/CLionProjects/Hangman/utils.h
+CMakeFiles/Hangman.dir/rng.c.o
+ /home/user/CLionProjects/Hangman/rng.c
+ /home/user/CLionProjects/Hangman/rng.h
+CMakeFiles/Hangman.dir/utils.c.o
+ /home/user/CLionProjects/Hangman/utils.c
+ /home/user/CLionProjects/Hangman/utils.h

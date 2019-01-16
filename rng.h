@@ -2,7 +2,7 @@
 
 #pragma once
 
-// initializes random number generator
+// Initializes random number generator
 void init_rng(void);
 
 /**

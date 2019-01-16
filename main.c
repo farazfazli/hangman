@@ -44,8 +44,8 @@ int main() {
     char *word = words[rand_to(total_elems)];
     size_t word_size = strlen(word) + 1; // includes NUL character
 
-    // Here I used stack based 'alloca' instead of VLA
-    char **word_to_guess = alloca(word_size * sizeof(word));
+    // Here I used 'malloc' instead of VLA
+    char **word_to_guess = malloc(word_size * sizeof(word));
     size_t word_len = strlen(word); // excludes NUL
 
     // point each element to the appropriate letter in our array
@@ -99,11 +99,12 @@ int main() {
         }
 
         if (tries < TOTAL_TRIES) {
-            printf("Tries Remaining: %d\n", TOTAL_TRIES - tries);
+            printf("\nTries Remaining: %d\n", TOTAL_TRIES - tries);
             fputs("Pick a letter: ", stdout);
         } else {
             puts("No tries left! Game Over!");
             break;
         }
     }
+    free(word_to_guess);
 }

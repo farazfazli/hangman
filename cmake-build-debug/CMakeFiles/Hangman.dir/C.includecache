@@ -6,13 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/user/CLionProjects/Hangman/main.c
-stdio.h
--
-string.h
--
-ctype.h
--
-malloc.h
--
-

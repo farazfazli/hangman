@@ -65,39 +65,39 @@ CMAKE_SOURCE_DIR = /home/user/CLionProjects/Hangman
 CMAKE_BINARY_DIR = /home/user/CLionProjects/Hangman/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/PointerPractice.dir
+# Target rules for target CMakeFiles/Hangman.dir
 
 # All Build rule for target.
-CMakeFiles/PointerPractice.dir/all:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/depend
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target PointerPractice"
-.PHONY : CMakeFiles/PointerPractice.dir/all
+CMakeFiles/Hangman.dir/all:
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/depend
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target Hangman"
+.PHONY : CMakeFiles/Hangman.dir/all
 
 # Include target in all.
-all: CMakeFiles/PointerPractice.dir/all
+all: CMakeFiles/Hangman.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/PointerPractice.dir/rule: cmake_check_build_system
+CMakeFiles/Hangman.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/PointerPractice.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Hangman.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/PointerPractice.dir/rule
+.PHONY : CMakeFiles/Hangman.dir/rule
 
 # Convenience name for target.
-PointerPractice: CMakeFiles/PointerPractice.dir/rule
+Hangman: CMakeFiles/Hangman.dir/rule
 
-.PHONY : PointerPractice
-
-# clean rule for target.
-CMakeFiles/PointerPractice.dir/clean:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/clean
-.PHONY : CMakeFiles/PointerPractice.dir/clean
+.PHONY : Hangman
 
 # clean rule for target.
-clean: CMakeFiles/PointerPractice.dir/clean
+CMakeFiles/Hangman.dir/clean:
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/clean
+.PHONY : CMakeFiles/Hangman.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Hangman.dir/clean
 
 .PHONY : clean
 

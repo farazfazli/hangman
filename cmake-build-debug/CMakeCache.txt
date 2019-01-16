@@ -124,7 +124,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=PointerPractice
+CMAKE_PROJECT_NAME:STATIC=Hangman
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -196,6 +196,12 @@ CURSES_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
 CURSES_NCURSES_LIBRARY:FILEPATH=/usr/lib/libncurses.so
+
+//Value Computed by CMake
+FirstProject_BINARY_DIR:STATIC=/home/user/CLionProjects/Hangman/cmake-build-debug
+
+//Value Computed by CMake
+FirstProject_SOURCE_DIR:STATIC=/home/user/CLionProjects/Hangman
 
 //Value Computed by CMake
 Hangman_BINARY_DIR:STATIC=/home/user/CLionProjects/Hangman/cmake-build-debug

@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named PointerPractice
+# Target rules for targets named Hangman
 
 # Build rule for target.
-PointerPractice: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 PointerPractice
-.PHONY : PointerPractice
+Hangman: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Hangman
+.PHONY : Hangman
 
 # fast build rule for target.
-PointerPractice/fast:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/build
-.PHONY : PointerPractice/fast
+Hangman/fast:
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/build
+.PHONY : Hangman/fast
 
 main.o: main.c.o
 
@@ -129,7 +129,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/main.c.o
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -138,7 +138,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/main.c.i
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -147,7 +147,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/main.c.s
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/main.c.s
 .PHONY : main.c.s
 
 rng.o: rng.c.o
@@ -156,7 +156,7 @@ rng.o: rng.c.o
 
 # target to build an object file
 rng.c.o:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/rng.c.o
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/rng.c.o
 .PHONY : rng.c.o
 
 rng.i: rng.c.i
@@ -165,7 +165,7 @@ rng.i: rng.c.i
 
 # target to preprocess a source file
 rng.c.i:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/rng.c.i
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/rng.c.i
 .PHONY : rng.c.i
 
 rng.s: rng.c.s
@@ -174,7 +174,7 @@ rng.s: rng.c.s
 
 # target to generate assembly for a file
 rng.c.s:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/rng.c.s
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/rng.c.s
 .PHONY : rng.c.s
 
 utils.o: utils.c.o
@@ -183,7 +183,7 @@ utils.o: utils.c.o
 
 # target to build an object file
 utils.c.o:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/utils.c.o
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/utils.c.o
 .PHONY : utils.c.o
 
 utils.i: utils.c.i
@@ -192,7 +192,7 @@ utils.i: utils.c.i
 
 # target to preprocess a source file
 utils.c.i:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/utils.c.i
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/utils.c.i
 .PHONY : utils.c.i
 
 utils.s: utils.c.s
@@ -201,7 +201,7 @@ utils.s: utils.c.s
 
 # target to generate assembly for a file
 utils.c.s:
-	$(MAKE) -f CMakeFiles/PointerPractice.dir/build.make CMakeFiles/PointerPractice.dir/utils.c.s
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/utils.c.s
 .PHONY : utils.c.s
 
 # Help Target
@@ -211,7 +211,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... PointerPractice"
+	@echo "... Hangman"
 	@echo "... edit_cache"
 	@echo "... main.o"
 	@echo "... main.i"

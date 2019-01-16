@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="Hangman"/>
+		<Option title="FirstProject"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -27,8 +27,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/user/CLionProjects/Hangman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Hangman">
-				<Option output="/home/user/CLionProjects/Hangman/cmake-build-debug/Hangman" prefix_auto="0" extension_auto="0"/>
+			<Target title="FirstProject">
+				<Option output="/home/user/CLionProjects/Hangman/cmake-build-debug/FirstProject" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/CLionProjects/Hangman/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -40,14 +40,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/user/CLionProjects/Hangman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Hangman"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/user/CLionProjects/Hangman/cmake-build-debug/Makefile&quot;  VERBOSE=1 FirstProject"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/user/CLionProjects/Hangman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/user/CLionProjects/Hangman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/user/CLionProjects/Hangman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Hangman/fast">
-				<Option output="/home/user/CLionProjects/Hangman/cmake-build-debug/Hangman" prefix_auto="0" extension_auto="0"/>
+			<Target title="FirstProject/fast">
+				<Option output="/home/user/CLionProjects/Hangman/cmake-build-debug/FirstProject" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/user/CLionProjects/Hangman/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -59,7 +59,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/user/CLionProjects/Hangman/cmake-build-debug/Makefile&quot;  VERBOSE=1 Hangman/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/user/CLionProjects/Hangman/cmake-build-debug/Makefile&quot;  VERBOSE=1 FirstProject/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/user/CLionProjects/Hangman/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/user/CLionProjects/Hangman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/user/CLionProjects/Hangman/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -77,19 +77,7 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/user/CLionProjects/Hangman/main.c">
-			<Option target="Hangman"/>
-		</Unit>
-		<Unit filename="/home/user/CLionProjects/Hangman/rng.c">
-			<Option target="Hangman"/>
-		</Unit>
-		<Unit filename="/home/user/CLionProjects/Hangman/rng.h">
-			<Option target="Hangman"/>
-		</Unit>
-		<Unit filename="/home/user/CLionProjects/Hangman/utils.c">
-			<Option target="Hangman"/>
-		</Unit>
-		<Unit filename="/home/user/CLionProjects/Hangman/utils.h">
-			<Option target="Hangman"/>
+			<Option target="FirstProject"/>
 		</Unit>
 		<Unit filename="/home/user/CLionProjects/Hangman/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
