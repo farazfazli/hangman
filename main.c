@@ -6,6 +6,7 @@
  * relied on a multiple layers of iteration, this aims to be 'simple'
  * and 'idiomatic', by using a different approach.
  *
+ * @version 2.0
  * @date 1/11/19
  * @author Faraz Fazli
  */
@@ -48,7 +49,7 @@ int main() {
     int chosen_letter;
     while ((chosen_letter = getchar()) != EOF) {
         // Consume '\n' from puts/printf/etc.
-        if (chosen_letter == '\n') {
+        if (isspace(chosen_letter)) {
             continue;
         }
 
