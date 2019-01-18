@@ -1,7 +1,7 @@
 /**
  *                      * Hangman in C *
- * O(1) lookup using pointers to 26 letters which each have a state
- * A letter is either _ (not picked, default), or the letter itself
+ * O(1) lookup using pointers to 26 letters which each have a
+ * state. A letter is either empty, or the letter itself.
  * I was inspired by seeing many other Hangman implementations which
  * relied on a multiple layers of iteration, this aims to be 'simple'
  * and 'idiomatic', by using a different approach.
@@ -16,89 +16,72 @@
 #include <stdlib.h>
 #include "rng.h"
 #include "utils.h"
+#include "config.h"
 
 /**
- * Use enum to replace "magic numbers" instead of #define or const
- * Ref: Practice of Programming, p.21
+ * Returns length of an array
  */
-enum {
-    ALPHABET_SIZE = 26,
-    TOTAL_TRIES = 10,
-};
-
-// Words the program chooses from
-static char *words[] = {"racing", "magic", "bow", "racecar"};
+#define len(x) (((sizeof(x)))/(sizeof((x)[0])))
 
 int main() {
-    init_rng();
     char letters[ALPHABET_SIZE];
+    int tries = 0;
+    rng_init();
+    memset(letters, HIDDEN_LETTER, ALPHABET_SIZE);
+    size_t total_elems = len(words);
 
-    // Let's set 'letters' to be composed of just _
-    // This will later be changed as the user guesses
-    memset(letters, '_', ALPHABET_SIZE);
-
-    // Total number of elements in our array
-    size_t total_elems = sizeof(words)/sizeof(words[0]);
-
-    char *word = words[rand_to(total_elems)];
-    size_t word_size = strlen(word) + 1; // includes NUL character
-
-    // Here I used 'malloc' instead of VLA
-    char **word_to_guess = malloc(word_size * sizeof(*word_to_guess));
+    char *word = words[rng_to(total_elems)];
     size_t word_len = strlen(word); // excludes NUL
+    size_t word_size = word_len + 1; // includes NUL
 
-    // point each element to the appropriate letter in our array
+    char **word_to_guess = malloc(word_size * sizeof(*word_to_guess));
+
+    // Link letters in word to 'letters' array
     for (size_t i = 0; i < word_len; i++) {
-        word_to_guess[i] = &letters[from_a(word[i])];
+        word_to_guess[i] = &letters[dst_from_a(word[i])];
     }
 
-    int tries = 0;
-    size_t num_previous_underscores = word_len;
-
-    print_count_underscores(word_to_guess);
+    size_t num_prev_missing = word_len;
+    count_missing_letters(word_to_guess, print_char);
     fputs("\nPick a letter: ", stdout);
 
-    // Could replace getchar() with fgets and parse each letter
-    // which may serve better in the future
-    int current_letter;
-    while ((current_letter = getchar()) != EOF) {
-        if (!isalpha(current_letter)) {
-            // Simply continue - printing here causes bugs
+    int chosen_letter;
+    while ((chosen_letter = getchar()) != EOF) {
+        // Consume '\n' from puts/printf/etc.
+        if (chosen_letter == '\n') {
             continue;
         }
 
-        // convert to lower case
-        current_letter = tolower(current_letter);
-
-        // distance from 'a'
-        size_t letter_pos = from_a(current_letter);
-
-        // Letter has already been picked if it is in array
-        if (letters[letter_pos] == current_letter) {
-            puts("Please pick a different letter.");
+        if (!isalpha(chosen_letter)) {
+            puts("Please enter a valid letter.");
             continue;
-        } else {
-            // Change underscore to the letter
-            letters[letter_pos] = (char) current_letter;
         }
 
-        // Finds if word still has underscores, and print word state
-        size_t num_underscores = print_count_underscores(word_to_guess);
+        chosen_letter = tolower(chosen_letter);
+        size_t letter_pos = dst_from_a(chosen_letter);
+        if (letters[letter_pos] != (char) HIDDEN_LETTER) {
+            puts("Please pick a different letter");
+            continue;
+        }
 
-        // If letter has no correct guesses from this turn, increment tries
-        if (num_underscores == num_previous_underscores) {
+        letters[letter_pos] = (char) chosen_letter;
+
+        size_t num_missing = count_missing_letters(word_to_guess, print_char);
+        if (num_missing == num_prev_missing) {
             tries++;
         }
-        num_previous_underscores = num_underscores;
+        num_prev_missing = num_missing;
 
-        // Win if no underscores left
-        if (num_underscores == 0) {
+        if (num_missing == 0) {
             puts("-> YOU WIN!");
             break;
         }
 
-        if (tries < TOTAL_TRIES) {
-            printf("\nTries Remaining: %d\n", TOTAL_TRIES - tries);
+        puts("");
+        int tries_left = TOTAL_TRIES - tries;
+        print_hangman(tries_left);
+        if (tries_left > 0) {
+            printf("\nTries Remaining: %d\n", tries_left);
             fputs("Pick a letter: ", stdout);
         } else {
             puts("No tries left! Game Over!");

@@ -76,6 +76,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/user/CLionProjects/Hangman/config.h">
+			<Option target="Hangman"/>
+		</Unit>
 		<Unit filename="/home/user/CLionProjects/Hangman/main.c">
 			<Option target="Hangman"/>
 		</Unit>

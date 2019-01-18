@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-void init_rng(void) {
+void rng_init(void) {
     srand((unsigned int) time(NULL));
 }
 
-size_t rand_to(size_t max) {
-    return (unsigned long) random() % max;
+size_t rng_to(size_t max) {
+    return (unsigned) rand() / ((unsigned) RAND_MAX / max + 1u);
 }

@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.13)
 project(Hangman C)
 
-add_executable(${CMAKE_PROJECT_NAME} main.c utils.c utils.h rng.c rng.h)
+add_executable(${CMAKE_PROJECT_NAME} main.c utils.c utils.h rng.c rng.h config.h)
 
 set(CMAKE_C_COMPILER clang)
 target_compile_features(${CMAKE_PROJECT_NAME} PRIVATE c_std_99)

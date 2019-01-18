@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/user/CLionProjects/Hangman/config.h
+
 /home/user/CLionProjects/Hangman/main.c
 stdio.h
 -
@@ -19,6 +21,8 @@ rng.h
 /home/user/CLionProjects/Hangman/rng.h
 utils.h
 /home/user/CLionProjects/Hangman/utils.h
+config.h
+/home/user/CLionProjects/Hangman/config.h
 
 /home/user/CLionProjects/Hangman/rng.c
 rng.h
@@ -35,8 +39,10 @@ stdlib.h
 /home/user/CLionProjects/Hangman/utils.c
 stdio.h
 -
-utils.h
-/home/user/CLionProjects/Hangman/utils.h
+stdlib.h
+-
+config.h
+/home/user/CLionProjects/Hangman/config.h
 
 /home/user/CLionProjects/Hangman/utils.h
 stdlib.h
