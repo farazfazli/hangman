@@ -6,13 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/home/user/CLionProjects/Hangman/main.c
+/home/user/CLionProjects/Hangman/config.h
+
+/home/user/CLionProjects/Hangman/dictionary.c
+dictionary.h
+/home/user/CLionProjects/Hangman/dictionary.h
+
+/home/user/CLionProjects/Hangman/dictionary.h
 stdio.h
 -
-string.h
+stdlib.h
 -
-ctype.h
+rng.h
+/home/user/CLionProjects/Hangman/rng.h
+
+/home/user/CLionProjects/Hangman/rng.c
+rng.h
+/home/user/CLionProjects/Hangman/rng.h
+stdlib.h
 -
-malloc.h
+time.h
 -
+
+/home/user/CLionProjects/Hangman/rng.h
+stdlib.h
+-
+
+/home/user/CLionProjects/Hangman/utils.c
+stdio.h
+-
+stdlib.h
+-
+config.h
+/home/user/CLionProjects/Hangman/config.h
 

@@ -76,7 +76,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/user/CLionProjects/Hangman/config.h">
+			<Option target="Hangman"/>
+		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/dictionary.c">
+			<Option target="Hangman"/>
+		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/dictionary.h">
+			<Option target="Hangman"/>
+		</Unit>
 		<Unit filename="/home/user/CLionProjects/Hangman/main.c">
+			<Option target="Hangman"/>
+		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/rng.c">
+			<Option target="Hangman"/>
+		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/rng.h">
+			<Option target="Hangman"/>
+		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/utils.c">
+			<Option target="Hangman"/>
+		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/utils.h">
 			<Option target="Hangman"/>
 		</Unit>
 		<Unit filename="/home/user/CLionProjects/Hangman/CMakeLists.txt">

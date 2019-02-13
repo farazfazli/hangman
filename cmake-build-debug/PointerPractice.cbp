@@ -79,6 +79,18 @@
 		<Unit filename="/home/user/CLionProjects/Hangman/main.c">
 			<Option target="PointerPractice"/>
 		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/rng.c">
+			<Option target="PointerPractice"/>
+		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/rng.h">
+			<Option target="PointerPractice"/>
+		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/utils.c">
+			<Option target="PointerPractice"/>
+		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/utils.h">
+			<Option target="PointerPractice"/>
+		</Unit>
 		<Unit filename="/home/user/CLionProjects/Hangman/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

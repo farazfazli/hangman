@@ -1,1 +1,1 @@
-clang  -Weverything -g   CMakeFiles/Hangman.dir/main.c.o  -o Hangman -lcurses -lform 
+clang -g   CMakeFiles/Hangman.dir/main.c.o CMakeFiles/Hangman.dir/utils.c.o CMakeFiles/Hangman.dir/rng.c.o CMakeFiles/Hangman.dir/dictionary.c.o  -o Hangman 

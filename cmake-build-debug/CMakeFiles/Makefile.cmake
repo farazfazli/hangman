@@ -16,13 +16,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/CMakeLanguageInformation.cmake"
   "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/CheckLibraryExists.cmake"
   "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/Compiler/GNU-C.cmake"
   "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/Compiler/GNU.cmake"
-  "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/FindCurses.cmake"
-  "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/FindPackageHandleStandardArgs.cmake"
-  "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/FindPackageMessage.cmake"
   "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/Platform/Linux-GNU-C.cmake"
   "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/Platform/Linux-GNU.cmake"
   "/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4886.39/bin/cmake/linux/share/cmake-3.13/Modules/Platform/Linux.cmake"
@@ -46,5 +42,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/PointerPractice.dir/DependInfo.cmake"
+  "CMakeFiles/Hangman.dir/DependInfo.cmake"
   )
