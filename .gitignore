@@ -37,7 +37,7 @@
 *.hex
 
 # CMake Stuff
-cmake-build-debug
+cmake-build-debug/
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
