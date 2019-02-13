@@ -9,7 +9,4 @@ enum {
     TOTAL_TRIES = 10,
     HIDDEN_LETTER = '_',
 };
-
-static char *words[] = {"racing", "magic", "bow", "racecar"};
-
 #endif //HANGMAN_CONFIG_H

@@ -123,6 +123,33 @@ Hangman/fast:
 	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/build
 .PHONY : Hangman/fast
 
+dictionary.o: dictionary.c.o
+
+.PHONY : dictionary.o
+
+# target to build an object file
+dictionary.c.o:
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/dictionary.c.o
+.PHONY : dictionary.c.o
+
+dictionary.i: dictionary.c.i
+
+.PHONY : dictionary.i
+
+# target to preprocess a source file
+dictionary.c.i:
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/dictionary.c.i
+.PHONY : dictionary.c.i
+
+dictionary.s: dictionary.c.s
+
+.PHONY : dictionary.s
+
+# target to generate assembly for a file
+dictionary.c.s:
+	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/dictionary.c.s
+.PHONY : dictionary.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Hangman"
 	@echo "... edit_cache"
+	@echo "... dictionary.o"
+	@echo "... dictionary.i"
+	@echo "... dictionary.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

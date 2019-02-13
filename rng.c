@@ -7,5 +7,5 @@ void rng_init(void) {
 }
 
 size_t rng_to(size_t max) {
-    return (unsigned) rand() / ((unsigned) RAND_MAX / max + 1u);
+    return (unsigned int) rand() / ((unsigned) RAND_MAX / max + 1u);
 }

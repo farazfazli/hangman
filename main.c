@@ -7,7 +7,7 @@
  * and 'idiomatic', by using a different approach.
  *
  * @version 2.0
- * @date 1/11/19
+ * @date 1/18/19
  * @author Faraz Fazli
  */
 
@@ -18,20 +18,17 @@
 #include "rng.h"
 #include "utils.h"
 #include "config.h"
+#include "dictionary.h"
 
-/**
- * Returns length of an array
- */
+//Returns length of an array
 #define len(x) (((sizeof(x)))/(sizeof((x)[0])))
 
 int main() {
     char letters[ALPHABET_SIZE];
     int tries = 0;
-    rng_init();
     memset(letters, HIDDEN_LETTER, ALPHABET_SIZE);
-    size_t total_elems = len(words);
 
-    char *word = words[rng_to(total_elems)];
+    const char *word = get_random_word();
     size_t word_len = strlen(word); // excludes NUL
     size_t word_size = word_len + 1; // includes NUL
 

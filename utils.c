@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "config.h"
 
+/* Compiler will optimize "puts" calls for ascii art,
+ * left as-is for more readability */
 void print_hangman(int tries_left) {
     if (tries_left > 7) {
         return;

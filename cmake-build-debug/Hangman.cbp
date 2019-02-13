@@ -79,6 +79,12 @@
 		<Unit filename="/home/user/CLionProjects/Hangman/config.h">
 			<Option target="Hangman"/>
 		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/dictionary.c">
+			<Option target="Hangman"/>
+		</Unit>
+		<Unit filename="/home/user/CLionProjects/Hangman/dictionary.h">
+			<Option target="Hangman"/>
+		</Unit>
 		<Unit filename="/home/user/CLionProjects/Hangman/main.c">
 			<Option target="Hangman"/>
 		</Unit>

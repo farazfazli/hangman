@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/user/CLionProjects/Hangman/cmake-build-debug
 CMakeFiles/Hangman.dir/all:
 	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/depend
 	$(MAKE) -f CMakeFiles/Hangman.dir/build.make CMakeFiles/Hangman.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target Hangman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target Hangman"
 .PHONY : CMakeFiles/Hangman.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/Hangman.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Hangman.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Hangman.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/CLionProjects/Hangman/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Hangman.dir/rule
